@@ -1,8 +1,11 @@
+
 import React, { useEffect, useState } from 'react'
+import axios from 'axios';
 import OtpInput from "react-otp-input";
 import { CgSpinner } from "react-icons/cg";
 import toast, { Toaster } from "react-hot-toast";
 import App from './App';
+
 
 
 const LoginPage = () => {
@@ -19,68 +22,40 @@ const LoginPage = () => {
 
     async function sendEmail() {
         try {
-            const emailSend = await Axios.post(
-                "http://localhost:3001/api/v1/auth/register",
-                {
-                    email,
-                },
-                {
-                    withCredentials: true,
-                }
-            );
-            console.log(emailSend);
-            toast.success(emailSend.data.message);
-            setShowOTP(true);
+            
 
         } catch (error) {
-            console.log(error);
-            toast.error(error.response.data.error);
-
+           
         } finally {
-            setLoading(false);
+           
         }
     }
 
     async function verifyOTP() {
         try {
-            const otpSend = await Axios.post(
-                "http://localhost:3001/api/v1/auth/verify",
-                {
-                    otp,
-                    email,
-                },
-                {
-                    withCredentials: true,
-                }
-            );
-            console.log(otpSend);
-            setUser(otpSend.data);
+            
+               
+      
 
         } catch (error) {
-            console.log(error);
+            
 
         } finally {
-            setLoading(false);
+           
         }
     }
 
     console.log('user', user);
 
-    // async function me() {
-    //     try {
-    //         const response = await Axios.get('http://localhost:3001/api/v1/auth/me', {
-    //             withCredentials: true,
-    //         })
-    //         console.log("response", response)
-    //         setUser(response?.data.success)
-    //     } catch (error) {
-    //         console.log(error)
-    //     }
-    // }
+    async function me() {
+        try {
+         
+        } catch (error) {
+           
+        }
+    }
 
-    // useEffect(() => {
-    //     me();
-    // }, [])
+
 
     return (
         <div>
@@ -110,7 +85,11 @@ const LoginPage = () => {
                                                     autofocus
                                                     className="opt-container"
                                                 />
-                                                <button className="bg-[#002D74] rounded-xl text-white py-2 hover:scale-105 duration-300 flex gap-1 items-center justify-center ">
+                                                <button className="bg-[#002D74] rounded-xl text-white py-2 hover:scale-105 duration-300 flex gap-1 items-center justify-center "
+                                                onClick={() => { 
+                                                    verifyOTP();
+                                                    setLoading(true);
+                                                }}>
                                                     {loading && <CgSpinner size={20} className=" mt-1 animate-spin" />}
 
                                                     <span>Verify OTP</span>
