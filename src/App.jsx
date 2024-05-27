@@ -15,13 +15,17 @@ function App() {
     <div className='bg-slate-900'>
      <Navbar/>
     </div>
-    <Routes>
+    <div className="min-h-screen bg-dark_purple"> 
+      <Routes>
       <Route path="/" element={<Home/>} />
       <Route path="/MyLearning" element={<MyLearning/>} />
       <Route path="/Courses" element={<Courses/>} />
       <Route path="/Contacts" element={<Contacts/>} />
       
     </Routes>
+    </div>
+   
+  
     </BrowserRouter>
   )
 }

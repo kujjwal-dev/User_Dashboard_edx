@@ -6,6 +6,7 @@ import LoginPage from './LoginPage.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <LoginPage/>
+    {/* <LoginPage/> */}
+    <App/>
   </React.StrictMode>,
 )
