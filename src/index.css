@@ -14,3 +14,7 @@
 .opt-container input {
     @apply !mr-0 flex-1 py-5  border-gray-500;
 }
+
+.slick-slide > div {
+    margin: 0 10px;
+}

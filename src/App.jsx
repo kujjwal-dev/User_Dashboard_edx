@@ -15,7 +15,7 @@ function App() {
     <div className='bg-slate-900'>
      <Navbar/>
     </div>
-    <div className="min-h-screen bg-dark_purple"> 
+    <div className="min-h-screen "> 
       <Routes>
       <Route path="/" element={<Home/>} />
       <Route path="/MyLearning" element={<MyLearning/>} />

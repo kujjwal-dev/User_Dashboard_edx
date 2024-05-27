@@ -8,11 +8,11 @@ const MyLearning = () => {
       </h1>
 
       <div className='flex max-w-5xl mx-auto gap-8 group'>
-        <div className='bg-white/10 duration-500 group-hover:blur-sm hover:!blur-none group-hover:scale-[0.85] hover:!scale-100  cursor-pointer  p-8 rounded-xl mix-blend-luminosity' >
+        <div className='bg-white/10 duration-500 group-hover:blur-sm hover:!blur-none group-hover:scale-[0.85] hover:!scale-100  cursor-pointer  p-8 rounded-xl mix-blend-luminosity border border-gray-600' >
 
           <img src='bootcamp.jpg' alt='' className='h-20 mx-auto'/>
           <h4 className='uppercase text-xl'>Bootcamp</h4>
-          <p className='text-sm leading-7 my-3 text-white opacity-50'>
+          <p className='text-sm leading-7 my-3 text-black font-bold opacity-50'>
           Bootcamp is a technology used to create a dual-boot system on a computer. It allows users to install and run both Windows and Mac operating systems on the same machine.
           </p>
           <button className='bg-btn_primary py-2.5 px-8 rounded-full'> 
@@ -20,11 +20,11 @@ const MyLearning = () => {
           </button>
 
         </div>
-        <div className='bg-white/10 duration-500 group-hover:blur-sm hover:!blur-none group-hover:scale-[0.85] hover:!scale-100 cursor-pointer p-8 rounded-xl mix-blend-luminosity' >
+        <div className='bg-white/10 duration-500 group-hover:blur-sm hover:!blur-none group-hover:scale-[0.85] hover:!scale-100 cursor-pointer p-8 rounded-xl mix-blend-luminosity border border-gray-600' >
 
-          <img src='bootcamp.jpg' alt='' className='h-20 mx-auto'/>
-          <h4 className='uppercase text-xl'>Bootcamp</h4>
-          <p className='text-sm leading-7 my-3 text-white opacity-50'>
+          <img src='buisness.jpg' alt='' className='h-20 mx-auto'/>
+          <h4 className='uppercase text-xl'>Buisness</h4>
+          <p className='text-sm leading-7 my-3 text-black font-bold opacity-50'>
           Bootcamp is a technology used to create a dual-boot system on a computer. It allows users to install and run both Windows and Mac operating systems on the same machine.
           </p>
           <button className='bg-btn_primary py-2.5 px-8 rounded-full'> 
@@ -32,11 +32,11 @@ const MyLearning = () => {
           </button>
 
         </div>
-        <div className='bg-white/10 duration-500 group-hover:blur-sm hover:!blur-none group-hover:scale-[0.85] hover:!scale-100 cursor-pointer p-8 rounded-xl mix-blend-luminosity' >
+        <div className='bg-white/10 duration-500 group-hover:blur-sm hover:!blur-none group-hover:scale-[0.85] hover:!scale-100 cursor-pointer p-8 rounded-xl mix-blend-luminosity border border-gray-600' >
 
-          <img src='bootcamp.jpg' alt='' className='h-20 mx-auto'/>
-          <h4 className='uppercase text-xl'>Bootcamp</h4>
-          <p className='text-sm leading-7 my-3 text-white opacity-50'>
+          <img src='basics.jpg' alt='' className='h-20 mx-auto'/>
+          <h4 className='uppercase text-xl'>Basic coding</h4>
+          <p className='text-sm leading-7 my-3 text-black font-bold opacity-50'>
            
          Bootcamp is a technology used to create a dual-boot system on a computer. It allows users to install and run both Windows and Mac operating systems on the same machine.
           </p>
