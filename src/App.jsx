@@ -1,10 +1,10 @@
 import React from "react"
-import Navbar from "./components/Navbar"
+
 import { BrowserRouter, Routes, Route } from "react-router-dom"
-import Home from "./components/Home"
-import MyLearning from "./components/MyLearning"
+import Profile from "./components/Profile"
 import Courses from "./components/Courses"
-import Contacts from "./components/Contacts"
+import Settings from "./components/Settings"
+
 
 
 function App() {
@@ -12,18 +12,12 @@ function App() {
 
   return (
     <BrowserRouter>
-    <div className='bg-slate-900'>
-     <Navbar/>
-    </div>
-    <div className="min-h-screen "> 
-      <Routes>
-      <Route path="/" element={<Home/>} />
-      <Route path="/MyLearning" element={<MyLearning/>} />
-      <Route path="/Courses" element={<Courses/>} />
-      <Route path="/Contacts" element={<Contacts/>} />
-      
+    <Routes>
+      <Route path="/" element={<Profile/>}/>
+       <Route path="/courses" element={<Courses/>}/>
+       <Route path="/setting" element={<Settings/>}/>
     </Routes>
-    </div>
+  
    
   
     </BrowserRouter>

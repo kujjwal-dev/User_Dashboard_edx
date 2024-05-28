@@ -12,7 +12,7 @@ const LoginPage = () => {
 
     const [otp, setOtp] = useState("");
     const [loading, setLoading] = useState(false)
-    const [showOTP, setShowOTP] = useState(true);
+    const [showOTP, setShowOTP] = useState(false);
     const [user, setUser] = useState(null);
     const [email, setEmail] = useState("");
 
